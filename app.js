@@ -13,8 +13,9 @@ var quiz = {
     "d": "&lt;Magadha&gt;"
     }
     ],
-    "answer": "&lt;Andhra&gt;",
+    "answer": "Andhra;",
     "score": 0,
+    "detail": "Dhanyakataka (also known as Dharanikota) is located in the present-day Andhra Pradesh state of India. It was a prominent Buddhist center under the Mahasanghikas. It is also believed that the Great Stupa at Amaravati, which is one of the most significant Buddhist monuments in India, was situated in the same region.This monument is a fine example of Buddhist art and architecture, further emphasizing the importance of this region as a Buddhist center. In contrast, Gandhara, located in present-day Pakistan and Afghanistan, was also a major center of Buddhist art and culture, but it is not the region where Dhanyakataka was located. Gandhara is especially known for the Gandhara style of Buddhist art, which incorporated influences from Greek and Roman art."
     "status": ""
     },
     {
@@ -28,48 +29,6 @@ var quiz = {
     }
     ],
     "answer": "Both the &lt;head&gt; section and the &lt;body&gt; section are correct",
-    "score": 0,
-    "status": ""
-    },
-    {
-    "id": 3,
-    "question": "What is the correct syntax for referring to an external script called 'xxx.js'?",
-    "options": [
-    {
-    "a": "&ltscript href=&quot;xxx.js&quot;>",
-    "b": "&lt;script name=&quot;xxx.js&quot;&gt;",
-    "c": "&lt;script src=&quot;xxx.js&quot;&gt;"
-    }
-    ],
-    "answer": "&lt;script src=&quot;xxx.js&quot;&gt;",
-    "score": 0,
-    "status": ""
-    },
-    {
-    "id": 4,
-    "question": "The external JavaScript file must contain the &lt;script&gt; tag.",
-    "options": [
-    {
-    "a": "True",
-    "b": "False"
-    }
-    ],
-    "answer": "False",
-    "score": 0,
-    "status": ""
-    },
-    {
-    "id": 5,
-    "question": "How do you write &quot;Hello World&quot; in an alert box?",
-    "options": [
-    {
-    "a": "alertBox(&quot;Hello World&quot;);",
-    "b": "msg(&quot;Hello World&quot;);",
-    "c": "alert(&quot;Hello World&quot;);",
-    "d": "msgBox(&quot;Hello World&quot;);",
-    }
-    ],
-    "answer": "alert(&quot;Hello World&quot;);",
     "score": 0,
     "status": ""
     },
@@ -125,7 +84,7 @@ var quiz = {
     $("#result").append(
     '<div class="result-question"><span>Q ' + quiz.JS[j].id + '</span> &nbsp;' + quiz.JS[j].question + '</div>' +
     '<div><b>Correct answer:</b> &nbsp;' + quiz.JS[j].answer + '</div>' +
-    '<div><b>Detail: </b> Dhanyakataka (also known as Dharanikota) is located in the present-day Andhra Pradesh state of India. It was a prominent Buddhist center under the Mahasanghikas. It is also believed that the Great Stupa at Amaravati, which is one of the most significant Buddhist monuments in India, was situated in the same region.This monument is a fine example of Buddhist art and architecture, further emphasizing the importance of this region as a Buddhist center. In contrast, Gandhara, located in present-day Pakistan and Afghanistan, was also a major center of Buddhist art and culture, but it is not the region where Dhanyakataka was located. Gandhara is especially known for the Gandhara style of Buddhist art, which incorporated influences from Greek and Roman art.  &nbsp;' + '</div>' +
+    '<div><b>Detail answer:</b> &nbsp;' + quiz.JS[j].detail + '</div>' +
     '<div class="last-row"><b>Score:</b> &nbsp;' + res + 
     '</div>'
     );
