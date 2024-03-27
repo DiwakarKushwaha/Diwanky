@@ -4,16 +4,16 @@ var quiz = {
     "JS": [
     {
     "id": 1,
-    "question": "Inside which HTML element do we put the JavaScript?",
+    "question": "In which one of the following regions was Dhanyakataka, which flourished as a prominent Buddhist centre under the Mahasanghikas, located?",
     "options": [
     {
-    "a": "&lt;script&gt;",
-    "b": "&lt;javascript&gt;",
-    "c": "&lt;scripting&gt;",
-    "d": "&lt;js&gt;"
+    "a": "&lt;Andhra&gt;",
+    "b": "&lt;Gandhara&gt;",
+    "c": "&lt;Kalinga&gt;",
+    "d": "&lt;Magadha&gt;"
     }
     ],
-    "answer": "&lt;script&gt;",
+    "answer": "&lt;Andhra&gt;",
     "score": 0,
     "status": ""
     },
