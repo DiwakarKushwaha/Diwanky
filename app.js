@@ -15,7 +15,6 @@ var quiz = {
     ],
     "answer": "Andhra;",
     "score": 0,
-    "detail": "Dhanyakataka (also known as Dharanikota) is located in the present-day Andhra Pradesh state of India. It was a prominent Buddhist center under the Mahasanghikas. It is also believed that the Great Stupa at Amaravati, which is one of the most significant Buddhist monuments in India, was situated in the same region.This monument is a fine example of Buddhist art and architecture, further emphasizing the importance of this region as a Buddhist center. In contrast, Gandhara, located in present-day Pakistan and Afghanistan, was also a major center of Buddhist art and culture, but it is not the region where Dhanyakataka was located. Gandhara is especially known for the Gandhara style of Buddhist art, which incorporated influences from Greek and Roman art."
     "status": ""
     },
     {
