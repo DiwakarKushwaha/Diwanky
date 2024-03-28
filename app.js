@@ -22,12 +22,13 @@ var quiz = {
     "question": "With reference to ancient India, consider the following statements :        1.	The concept of Stupa is Buddhist in origin.          2.	Stupa was generally a repository of relics.              3.	Stupa was a votive and commemorative structure in Buddhist tradition.             How many of the statements given above are correct?",
     "options": [
     {
-    "a": "The &lt;head&gt; section",
-    "b": "The &lt;body&gt; section",
-    "c": "Both the &lt;head&gt; section and the &lt;body&gt; section are correct"
+    "a": "Only one",
+    "b": "Only two",
+    "c": "All three"
+    "d": "None"
     }
     ],
-    "answer": "Both the &lt;head&gt; section and the &lt;body&gt; section are correct",
+    "answer": "Only two",
     "score": 0,
     "status": ""
     },
