@@ -1,147 +1,87 @@
-/* Created and coded by Diwakar Kushwaha */
-/* Quiz source: w3schools.com */
-var quiz = {
-    "JS": [
+// Define the questions for the quiz
+const quizData = [
     {
-    "id": 1,
-    "question": "In which one of the following regions was Dhanyakataka, which flourished as a prominent Buddhist centre under the Mahasanghikas, located?",
-    "options": [
-    {
-    "a": "Andhra",
-    "b": "Gandhara",
-    "c": "Kalinga",
-    "d": "Magadha"
-    }
-    ],
-    "answer": "Andhra =&gt; Dhanyakataka (also known as Dharanikota) is located in the present-day Andhra Pradesh state of India. It was a prominent Buddhist center under the Mahasanghikas. It is also believed that the Great Stupa at Amaravati, which is one of the most significant Buddhist monuments in India, was situated in the same region.This monument is a fine example of Buddhist art and architecture, further emphasizing the importance of this region as a Buddhist center. In contrast, Gandhara, located in present-day Pakistan and Afghanistan, was also a major center of Buddhist art and culture, but it is not the region where Dhanyakataka was located. Gandhara is especially known for the Gandhara style of Buddhist art, which incorporated influences from Greek and Roman art.",
-    "score": 0,
-    "status": ""
+        question: "What is the capital of France?",
+        answers: [
+            { text: "New York", correct: false },
+            { text: "Paris", correct: true },
+            { text: "London", correct: false },
+            { text: "Madrid", correct: false },
+        ],
     },
     {
-    "id": 2,
-    "question": "With reference to ancient India, consider the following statements :        1.	The concept of Stupa is Buddhist in origin.          2.	Stupa was generally a repository of relics.              3.	Stupa was a votive and commemorative structure in Buddhist tradition.             How many of the statements given above are correct?",
-    "options": [
-    {
-    "a": "Only one",
-    "b": "Only two",
-    "c": "All three"
-    "d": "None"
-    }
-    ],
-    "answer": "Only two",
-    "score": 0,
-    "status": ""
+        question: "What is the highest mountain in the world?",
+        answers: [
+            { text: "Kilimanjaro", correct: false },
+            { text: "Everest", correct: true },
+            { text: "Denali", correct: false },
+            { text: "Fuji", correct: false },
+        ],
     },
     {
-    "id": 3,
-    "question": "Is JavaScript case-sensitive?",
-    "options": [
-    {
-    "a": "No",
-    "b": "Yes"
+        question: "What is the largest country by land area?",
+        answers: [
+            { text: "Russia", correct: true },
+            { text: "China", correct: false },
+            { text: "Canada", correct: false },
+            { text: "USA", correct: false },
+        ],
+    },
+];
+
+// Select the HTML elements
+const questionContainer = document.querySelector(".questions");
+const resultsContainer = document.querySelector(".results");
+const restartButton = document.querySelector("#restart");
+const totalSpan = document.querySelector("#total");
+const correctSpan = document.querySelector("#correct");
+
+// Define global variables
+let currentQuestionIndex = 0;
+let numCorrect = 0;
+
+// Function to populate the HTML with question and answer options
+function showQuestion() {
+    const currentQuestion = quizData[currentQuestionIndex];
+    questionContainer.innerHTML = `
+        <p>${currentQuestion.question}</p>
+        <ul>
+            ${currentQuestion.answers.map(answer => `
+                <li>
+                    <button class="answer-btn">${answer.text}</button>
+                </li>
+            `).join("")}
+        </ul>
+    `;
+    const answerButtons = document.querySelectorAll(".answer-btn");
+    answerButtons.forEach(button => {
+        button.addEventListener("click", checkAnswer);
+    }); 
+}
+
+// Function to check the selected answer and update global variables accordingly
+function checkAnswer(e) {
+    const selectedButton = e.target;
+    const isCorrect = quizData[currentQuestionIndex].answers.find(answer => answer.text === selectedButton.textContent).correct;
+    if (isCorrect) {
+        numCorrect++;
     }
-    ],
-    "answer": "Yes",
-    "score": 0,
-    "status": ""
-    }
-    ]
-    }
-    var quizApp = function () {
-    this.score = 0;
-    this.qno = 1;
-    this.currentque = 0;
-    var totalque = quiz.JS.length;
-    this.displayQuiz = function (cque) {
-    this.currentque = cque;
-    if (this.currentque < totalque) {
-    $("#tque").html(totalque);
-    $("#previous").attr("disabled", false);
-    $("#next").attr("disabled", false);
-    $("#qid").html(quiz.JS[this.currentque].id + '.');
-    $("#question").html(quiz.JS[this.currentque].question);
-    $("#question-options").html("");
-    for (var key in quiz.JS[this.currentque].options[0]) {
-    if (quiz.JS[this.currentque].options[0].hasOwnProperty(key)) {
-    $("#question-options").append(
-    "<div class='form-check option-block'>" +
-    "<label class='form-check-label'>" +
-    "<input type='radio' class='form-check-input' name='option' id='q" + key + "' value='" + quiz.JS[this.currentque].options[0][key] + "'><span id='optionval'>" +
-    quiz.JS[this.currentque].options[0][key] +
-    "</span></label>"
-    );
-    }
-    }
-    }
-    if (this.currentque <= 0) {
-    $("#previous").attr("disabled", true);
-    }
-    if (this.currentque >= totalque) {
-    $('#next').attr('disabled', true);
-    for (var i = 0; i < totalque; i++) {
-    this.score = this.score + quiz.JS[i].score;
-    }
-    return this.showResult(this.score);
-    }
-    }
-    this.showResult = function (scr) {
-    $("#result").addClass('result');
-    $("#result").html("<h1 class='res-header'>Total Score: &nbsp;" + scr + '/' + totalque + "</h1>");
-    for (var j = 0; j < totalque; j++) {
-    var res;
-    if (quiz.JS[j].score == 0) {
-    res = '<span class="wrong">' + quiz.JS[j].score + '</span><i class="fa fa-remove c-wrong"></i>';
+    currentQuestionIndex++;
+    if (currentQuestionIndex === quizData.length) {
+        showResults();
     } else {
-    res = '<span class="correct">' + quiz.JS[j].score + '</span><i class="fa fa-check c-correct"></i>';
+        showQuestion();
     }
-    $("#result").append(
-    '<div class="result-question"><span>Q ' + quiz.JS[j].id + '</span> &nbsp;' + quiz.JS[j].question + '</div>' +
-    '<div class="last-row"><b>Correct answer:</b> &nbsp;' + quiz.JS[j].answer + '</div>' +
-    //'<div class="last-row"><b>Score:</b> &nbsp;' + res +
-    '</div>'
-    );
-    }
-    }
-    this.checkAnswer = function (option) {
-    var answer = quiz.JS[this.currentque].answer;
-    option = option.replace(/</g, "&lt;") //for <
-    option = option.replace(/>/g, "&gt;") //for >
-    option = option.replace(/"/g, "&quot;")
-    if (option == quiz.JS[this.currentque].answer) {
-    if (quiz.JS[this.currentque].score == "") {
-    quiz.JS[this.currentque].score = 1;
-    //quiz.JS[this.currentque].status = "correct";
-    }
-    } else {
-    quiz.JS[this.currentque].status = "wrong";
-    }
-    }
-    this.changeQuestion = function (cque) {
-    this.currentque = this.currentque + cque;
-    this.displayQuiz(this.currentque);
-    }
-    }
-    var jsq = new quizApp();
-    var selectedopt;
-    $(document).ready(function () {
-    jsq.displayQuiz(0);
-    $('#question-options').on('change', 'input[type=radio][name=option]', function (e) {
-    //var radio = $(this).find('input:radio');
-    $(this).prop("checked", true);
-    selectedopt = $(this).val();
-    });
-    });
-    $('#next').click(function (e) {
-    e.preventDefault();
-    if (selectedopt) {
-    jsq.checkAnswer(selectedopt);
-    }
-    jsq.changeQuestion(1);
-    });
-    $('#previous').click(function (e) {
-    e.preventDefault();
-    if (selectedopt) {
-    jsq.checkAnswer(selectedopt);
-    }
-    jsq.changeQuestion(-1);
-    });
+}
+
+// Function to display the final quiz results
+function showResults() {
+    questionContainer.style.display = "none";
+    resultsContainer.style.display = "block";
+    totalSpan.textContent = quizData.length;
+    correctSpan.textContent = numCorrect;
+}
+
+// Add event listener to restart the quiz
+restartButton.addEventListener("click", () => {
+    currentQuestionIndex = 0
