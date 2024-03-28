@@ -19,7 +19,7 @@ var quiz = {
     },
     {
     "id": 2,
-    "question": "Where is the correct place to insert a JavaScript?",
+    "question": "With reference to ancient India, consider the following statements :        1.	The concept of Stupa is Buddhist in origin.          2.	Stupa was generally a repository of relics.              3.	Stupa was a votive and commemorative structure in Buddhist tradition.             How many of the statements given above are correct?",
     "options": [
     {
     "a": "The &lt;head&gt; section",
