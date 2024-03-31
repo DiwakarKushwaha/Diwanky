@@ -77,7 +77,7 @@ const quizDB =[
     },
     {
         question: "With reference to ancient Indian History, consider the following pairs:",
-        e:" &nbsp;Literary work&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;Author",
+        e:" &nbsp;Literary work&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Author",
         f:"1: Devichandragupta&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;Bilhana",
         g:"2: Hammira-Mahakavya Nayachandra &emsp; &emsp;Suri",
         h:"3: Milinda-panha&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Nagarjuna",
