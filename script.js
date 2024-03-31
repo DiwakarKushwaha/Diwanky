@@ -163,11 +163,6 @@ if(checkedAnswer == quizDB[questionCount].ans){
 questionCount++;
 
 deselectAll();
-    
-detailAnswer.addEventListener('click',()=>{
-    const questionList = quizDB[questionCount];
-    description.innerHTML =  questionList.detail;
-});
 
 if(questionCount < quizDB.length){
     loadQuestion(); 
@@ -180,8 +175,10 @@ if(questionCount < quizDB.length){
     showScore.classList.remove('scoreArea');
 
 }
-
-
 });
 
+detailAnswer.addEventListener('click',()=>{
+    const questionList = quizDB[questionCount];
+    description.innerHTML =  questionList.detail;
+});
 
