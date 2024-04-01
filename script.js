@@ -178,7 +178,7 @@ if(questionCount < quizDB.length){
 }
     if(score==quizDB.length){
         showScore.innerHTML = `
-    <h2>🥰 Excellent My Sweety 🥰</h2>
+    <h2>🥰 Excellent Meri Praan 🥰</h2>
     <button class="btn" onclick="location.reload()">Retry</button>
     `;
     }
