@@ -81,7 +81,7 @@ const quizDB =[
         f:"1: Devichandragupta________Bilhana",
         g:"2: Hammira-Mahakavya Nayachandra___Suri",
         h:"3: Milinda-panha________Nagarjuna",
-        i:"4: Nitivakyamrita_______Somadeva Suri",
+        i:"4: Nitivakyamrita__Somadeva Suri",
         j:"How many of the above pairs are correctly matched?",
         a:"Only one",
         b:"Only two",
