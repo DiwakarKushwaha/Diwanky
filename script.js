@@ -79,7 +79,7 @@ const quizDB =[
         question: "With reference to ancient Indian History, consider the following pairs:",
         e:" &nbsp;Literary work________Author",
         f:"1: Devichandragupta________Bilhana",
-        g:"2: Hammira-Mahakavya Nayachandra___Suri",
+        g:"2: Hammira-Mahakavya-Nayachandra___Suri",
         h:"3: Milinda-panha________Nagarjuna",
         i:"4: Nitivakyamrita__Somadeva Suri",
         j:"How many of the above pairs are correctly matched?",
