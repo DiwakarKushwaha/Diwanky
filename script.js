@@ -77,17 +77,17 @@ const quizDB =[
     },
     {
         question: "With reference to ancient Indian History, consider the following pairs:",
-        e:" &nbsp;Literary work&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;Author",
-        f:"1: Devichandragupta&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;Bilhana",
-        g:"2: Hammira-Mahakavya Nayachandra &emsp; &emsp;Suri",
-        h:"3: Milinda-panha&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Nagarjuna",
-        i:"4: Nitivakyamrita &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Somadeva Suri",
+        e:" &nbsp;Literary work----------------Author",
+        f:"1: Devichandragupta----------------Bilhana",
+        g:"2: Hammira-Mahakavya Nayachandra-------Suri",
+        h:"3: Milinda-panha----------------Nagarjuna",
+        i:"4: Nitivakyamrita----------------Somadeva Suri",
         j:"How many of the above pairs are correctly matched?",
         a:"Only one",
         b:"Only two",
         c:"Only three",
         d:"All four",
-        ans:"ans2",
+        ans:"ans3",
         detail:"<hr> The correct answer is Only two:- Devichandragupta:-​It is a Sanskrit play written by Vishakhadatta. This narrates the heroic deeds of Chandragupta in which he rescues the wife of his elder brother from the Shaka ruler. Hence pair 1 is incorrect. Hammira Mahakavya:- Hammira Mahakavya is a 15th-century Indian Sanskrit epic poem written by the Jain scholar Nayachandra Suri. It is a legendary biography of the 13th-century Chahamana king Hammira. It tells about the Chahamana dynasty rulers. Hence pair 2 is correct. Milinda-panha:- It is the composition of dialogues between the Buddhist monk Nagasena and King Milinda. Hence pair 3 is incorrect. Milinda panha refers to (Questions of Milinda). It is written in the Pali language. Nitivakyamrita:- The Nitivakyamrita is a work on ethics, politics, and social norms written in Sanskrit. It was authored by Somadeva Suri, a renowned Jain monk and scholar. Hence pair 4 is correct.  The (Nītivākyāmr̥ta) is composed in the form of verses (shlokas) and contains teachings on various aspects of life including virtue, duty, conduct, and governance. It is an important work in the canon of Jain literature and is still studied for its profound insights into life and morality."
     }
 ];
