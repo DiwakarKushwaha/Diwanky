@@ -176,6 +176,12 @@ if(questionCount < quizDB.length){
     showScore.classList.remove('scoreArea');
 
 }
+    if(score==quizDB.length){
+        showScore.innerHTML = `
+    <h2>🥰 Excellent My Sweety 🥰</h2>
+    <button class="btn" onclick="location.reload()">Retry</button>
+    `;
+    }
 
 
 });
