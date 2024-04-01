@@ -87,7 +87,7 @@ const quizDB =[
         b:"Only two",
         c:"Only three",
         d:"All four",
-        ans:"ans3",
+        ans:"ans2",
         detail:"<hr> The correct answer is Only two:- Devichandragupta:-​It is a Sanskrit play written by Vishakhadatta. This narrates the heroic deeds of Chandragupta in which he rescues the wife of his elder brother from the Shaka ruler. Hence pair 1 is incorrect. Hammira Mahakavya:- Hammira Mahakavya is a 15th-century Indian Sanskrit epic poem written by the Jain scholar Nayachandra Suri. It is a legendary biography of the 13th-century Chahamana king Hammira. It tells about the Chahamana dynasty rulers. Hence pair 2 is correct. Milinda-panha:- It is the composition of dialogues between the Buddhist monk Nagasena and King Milinda. Hence pair 3 is incorrect. Milinda panha refers to (Questions of Milinda). It is written in the Pali language. Nitivakyamrita:- The Nitivakyamrita is a work on ethics, politics, and social norms written in Sanskrit. It was authored by Somadeva Suri, a renowned Jain monk and scholar. Hence pair 4 is correct.  The (Nītivākyāmr̥ta) is composed in the form of verses (shlokas) and contains teachings on various aspects of life including virtue, duty, conduct, and governance. It is an important work in the canon of Jain literature and is still studied for its profound insights into life and morality."
     }
 ];
