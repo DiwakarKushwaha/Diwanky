@@ -21,7 +21,7 @@
     .inner-div{
         width: fit-content;
         background-color: #74b9;
-        padding: 3rem 8rem;
+        padding: 3rem 3rem;
         border-radius: 1rem;
         box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
     }
