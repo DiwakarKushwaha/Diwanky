@@ -184,7 +184,7 @@ if(questionCount < quizDB.length){
     <h2>🥰 Meri Duniya 🥰</h2>
     <h2>💞 Meri Sweety 💞</h2>
     <h2>❤️❤️ I Love You Sooo... Much meri Pyaari Pinku... ❤️❤️</h2>
-    <img src="kiss.gif" alt="Computer man" style="width:48px;height:48px;">
+    <img src="kiss.gif" alt="Computer man" style="width:58px;height:58px;">
 
     
     <button class="btn" onclick="location.reload()">Retry</button>
