@@ -178,12 +178,12 @@ if(questionCount < quizDB.length){
 }
     if(score==quizDB.length){
         showScore.innerHTML = `
-    <h2>🥰 Excellent Meri Praan 🥰</h2>
-    <h2>😘 Meri Babi 😘</h2>
-    <h2>😍 Meri Dulaari 😍</h2>
-    <h2>🥰 Meri Duniya 🥰</h2>
-    <h2>💞 Meri Sweety 💞</h2>
-    <h2>❤️❤️ I Love You Sooo... Much meri Pyaari Pinku... ❤️❤️</h2>
+    <h2>🥰 Excellent 🥰</h2>
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
     <img src="kiss.gif" alt="Computer man" style="width:58px;height:58px;">
 
     
